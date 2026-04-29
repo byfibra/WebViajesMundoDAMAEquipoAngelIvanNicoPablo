@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { InicioComponent } from './inicio/inicio';
-import { DestinosComponent } from './destinos/destinos';
-import { ContactoComponent } from './contacto/contacto';
+import { InicioComponent } from './componentes/inicio/inicio';
+import { DestinosComponent } from './componentes/destinos/destinos';
+import { ContactoComponent } from './componentes/contacto/contacto';
 
 export const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
