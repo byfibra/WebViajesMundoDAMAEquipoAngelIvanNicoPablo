@@ -18,8 +18,13 @@ export class DestinosComponent implements OnInit {
   constructor(private destinationService: DestinationService) {}
 
   ngOnInit(): void {
-    this.destinationService.getDestinations().subscribe(data => {
-      this.destinations = data;
+    this.destinationService.getDestinations().subscribe({
+      next: (data) => {
+        this.destinations = data;
+      },
+      error: (err) => {
+        console.error('Error al cargar destinos:', err);
+      }
     });
   }
 

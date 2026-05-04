@@ -1,68 +1,134 @@
 [
   {
     "id": 1,
-    "name": "París, Francia",
-    "description": "Torre Eiffel, Louvre, Notre Dame. La ciudad del amor y la luz.",
+    "name": "Cancún destino",
+    "description": "Playas de arena blanca y aguas turquesas en el paraíso caribeño.",
     "price": 1200,
-    "category": "Europa",
+    "category": "América",
     "duration": "7 días / 6 noches",
-    "image": "/paris destino.avif",
-    "details": "Disfruta de la Torre Eiffel, el Louvre y paseos por el Sena.",
-    "features": ["Hotel 4 estrellas", "Desayuno incluido", "Tours guiados"]
+    "image": "/cancún destino.jpg",
+    "details": "Disfruta de playas paradisíacas, cenotes y la vibrante vida nocturna de Cancún.",
+    "features": ["Resort 5 estrellas", "Todo incluido", "Excursiones a Cozumel"]
   },
   {
     "id": 2,
-    "name": "Santorini, Grecia",
-    "description": "Islas paradisíacas con vistas espectaculares al mar Egeo.",
-    "price": 1350,
-    "category": "Europa",
-    "duration": "10 días / 9 noches",
-    "image": "/Santorini.jpg",
-    "details": "Casas blancas, playas volcánicas y puestas de sol inolvidables.",
-    "features": ["Hotel boutique", "Tours incluidos", "Traslados VIP"]
+    "name": "Bali destino",
+    "description": "Templos exóticos, arrozales y playas vírgenes en la isla de los dioses.",
+    "price": 1100,
+    "category": "Asia",
+    "duration": "8 días / 7 noches",
+    "image": "/bali destino.jpg",
+    "details": "Experimenta la espiritualidad balinesa, playas hermosas y gastronomía deliciosa.",
+    "features": ["Villa tradicional", "Masajes incluidos", "Tours culturales"]
   },
   {
     "id": 3,
-    "name": "Reikiavik, Islandia",
-    "description": "Auroras boreales, glaciares y géiseres en la tierra de hielo y fuego.",
-    "price": 1450,
-    "category": "Europa",
-    "duration": "8 días / 7 noches",
-    "image": "/Islandia.jpg",
-    "details": "Experiencias únicas entre naturaleza y paisajes impresionantes.",
-    "features": ["Cabaña tradicional", "Tour de auroras", "Desayuno local"]
+    "name": "Egipto destino",
+    "description": "Las majestuosas pirámides y la historia milenaria del antiguo Egipto.",
+    "price": 1350,
+    "category": "África",
+    "duration": "9 días / 8 noches",
+    "image": "/egipto destino.jpg",
+    "details": "Visita las pirámides de Giza, el museo del Cairo y navega por el Nilo.",
+    "features": ["Crucero por el Nilo", "Guía arqueólogo", "Visitas nocturnas"]
   },
   {
     "id": 4,
-    "name": "Tokio, Japón",
-    "description": "Una mezcla de tradición y modernidad con templos y rascacielos.",
+    "name": "Grecia destino",
+    "description": "La cuna de la civilización occidental con templos antiguos y playas mediterráneas.",
+    "price": 1400,
+    "category": "Europa",
+    "duration": "7 días / 6 noches",
+    "image": "/grecia destino.jpg",
+    "details": "Explora la Acrópolis, Partenón e islas griegas con vistas espectaculares.",
+    "features": ["Hotel céntrico", "Tours guiados", "Ferry a islas"]
+  },
+  {
+    "id": 5,
+    "name": "Islandia destino",
+    "description": "Auroras boreales, glaciares y géiseres en la tierra de hielo y fuego.",
+    "price": 1500,
+    "category": "Europa",
+    "duration": "8 días / 7 noches",
+    "image": "/Islandia destino.jpg",
+    "details": "Experiencias únicas en cascadas, cuevas de hielo y paisajes volcánicos.",
+    "features": ["Cabaña geotérmica", "Tour de auroras", "4x4 incluido"]
+  },
+  {
+    "id": 6,
+    "name": "Japón destino",
+    "description": "Tradición y modernidad en una metrópolis de templos, tecnología y arte.",
     "price": 1800,
     "category": "Asia",
     "duration": "9 días / 8 noches",
     "image": "/japon destino.webp",
-    "details": "Explora templos antiguos, gastronomía única y barrios modernos.",
-    "features": ["Tren bala", "Visitas guiadas", "Rutas gastronómicas"]
+    "details": "Templos y santuarios, barrios modernos, ramen auténtico y cerezos en flor.",
+    "features": ["Tren bala JR Pass", "Hotel tradicional", "Rutas gastronómicas"]
   },
   {
-    "id": 5,
-    "name": "Nueva York, EEUU",
-    "description": "Times Square, Central Park y la ciudad que nunca duerme.",
-    "price": 1500,
-    "category": "América",
-    "duration": "7 días / 6 noches",
-    "image": "/new york destino.jpg",
-    "details": "Disfruta de arte, arquitectura y vida urbana sin fin.",
-    "features": ["Hotel céntrico", "City pass", "Traslado incluido"]
-  },
-  {
-    "id": 6,
-    "name": "Kenia, Safari",
-    "description": "Paisajes salvajes y encuentros con la fauna africana.",
-    "price": 1600,
+    "id": 7,
+    "name": "Kenia destino",
+    "description": "Paisajes salvajes y encuentros con la fauna africana en su hábitat natural.",
+    "price": 1700,
     "category": "África",
     "duration": "8 días / 7 noches",
     "image": "/kenia destinos.webp",
-    "details": "Satélites, parques nacionales y alojamientos junto a la naturaleza.",
-    "features": ["Safari completo", "Alojamiento lodges", "Guía experto"]
+    "details": "Safari en la reserva del Masái Mara, leones, elefantes y jirafas.",
+    "features": ["Safari completo", "Lodges 4 estrellas", "Guía especializado"]
+  },
+  {
+    "id": 8,
+    "name": "Marruecos destino",
+    "description": "Mercados vibrantes, medinas antiguas y desiertos del Sáhara.",
+    "price": 950,
+    "category": "África",
+    "duration": "7 días / 6 noches",
+    "image": "/marruecos destinos.jpg",
+    "details": "Explora las medinas, desiertos, Atlas y la arquitectura islámica de Marrakech.",
+    "features": ["Riad tradicional", "Tour del desierto", "Cena bereber"]
+  },
+  {
+    "id": 9,
+    "name": "Nueva York destino",
+    "description": "Times Square, Central Park y la ciudad que nunca duerme.",
+    "price": 1550,
+    "category": "América",
+    "duration": "7 días / 6 noches",
+    "image": "/new york destino.jpg",
+    "details": "Rascacielos, museos de clase mundial, Broadway y experiencias urbanas únicas.",
+    "features": ["Hotel céntrico", "NYC Pass", "Crucero por Hudson"]
+  },
+  {
+    "id": 10,
+    "name": "París destino",
+    "description": "La ciudad del amor con la Torre Eiffel, arte y gastronomía exquisita.",
+    "price": 1300,
+    "category": "Europa",
+    "duration": "7 días / 6 noches",
+    "image": "/paris destino.avif",
+    "details": "Louvre, Catedral de Notre Dame, Montmartre y paseos por el Sena.",
+    "features": ["Hotel 4 estrellas", "Entradas a museos", "Crucero fluvial"]
+  },
+  {
+    "id": 11,
+    "name": "Perú destino",
+    "description": "La joya arqueológica inca en las alturas de los Andes peruanos.",
+    "price": 1600,
+    "category": "América",
+    "duration": "8 días / 7 noches",
+    "image": "/perú destino.jpg",
+    "details": "Machu Picchu, Valle Sagrado, Cusco y experiencias andinas inolvidables.",
+    "features": ["Tren a Machu Picchu", "Hotel 4 estrellas", "Guía en español"]
+  },
+  {
+    "id": 12,
+    "name": "Tailandia destino",
+    "description": "Templos budistas, playas tropicales y una cultura exótica y fascinante.",
+    "price": 1050,
+    "category": "Asia",
+    "duration": "8 días / 7 noches",
+    "image": "/tailandia destino.png",
+    "details": "Templos majestuosos, mercados flotantes, playas de Phuket y gastronomía tailandesa.",
+    "features": ["Hotel 5 estrellas", "Tours incluidos", "Crucero y playas"]
   }
 ]
