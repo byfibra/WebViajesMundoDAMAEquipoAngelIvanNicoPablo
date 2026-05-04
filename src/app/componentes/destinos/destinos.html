@@ -1,35 +1,14 @@
 <div class="container mt-5">
   <h2 class="text-center mb-4">Nuestros Destinos</h2>
   <div class="row">
-    <!-- Bali -->
-    <div class="col-md-4 mb-4">
+    <div class="col-md-4 mb-4" *ngFor="let destination of destinations">
       <div class="card h-100 shadow-sm">
-        <img src="bali destino.jpg" class="card-img-top" alt="Bali">
+        <img [src]="destination.image" class="card-img-top" [alt]="destination.name">
         <div class="card-body text-center">
-          <h5 class="card-title">Bali</h5>
-          <p class="card-text">Descubre los templos y selvas de Indonesia.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Japón -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="japon destino.jpg" class="card-img-top" alt="Japón">
-        <div class="card-body text-center">
-          <h5 class="card-title">Japón</h5>
-          <p class="card-text">La mezcla perfecta entre tradición y futuro.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Egipto -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="egipto destino.jpg" class="card-img-top" alt="Egipto">
-        <div class="card-body text-center">
-          <h5 class="card-title">Egipto</h5>
-          <p class="card-text">Explora las pirámides y la historia del Nilo.</p>
+          <h5 class="card-title">{{ destination.name }}</h5>
+          <p class="card-text">{{ destination.description }}</p>
+          <p class="card-text"><strong>Precio: ${{ destination.price }}</strong></p>
+          <a [routerLink]="['/destination', destination.id]" class="btn btn-primary">Ver Detalles</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "París",
+    "description": "La ciudad del amor, con la Torre Eiffel y museos icónicos.",
+    "price": 1200,
+    "image": "paris destino.avif",
+    "details": "Disfruta de la Torre Eiffel, el Louvre y paseos por el Sena."
+  },
+  {
+    "id": 2,
+    "name": "Nueva York",
+    "description": "La Gran Manzana, llena de rascacielos y cultura.",
+    "price": 1500,
+    "image": "newyork.jpg",
+    "details": "Visita Times Square, Central Park y el Empire State Building."
+  },
+  {
+    "id": 3,
+    "name": "Tokio",
+    "description": "Una mezcla de tradición y modernidad en Japón.",
+    "price": 1800,
+    "image": "tokio.jpg",
+    "details": "Explora templos antiguos y la bulliciosa vida urbana."
+  }
+]

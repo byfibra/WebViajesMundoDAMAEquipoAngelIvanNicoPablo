@@ -1,0 +1,15 @@
+<div class="container mt-5" *ngIf="destination">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="destination.image" class="img-fluid" [alt]="destination.name">
+    </div>
+    <div class="col-md-6">
+      <h2>{{ destination.name }}</h2>
+      <p>{{ destination.description }}</p>
+      <p><strong>Detalles:</strong> {{ destination.details }}</p>
+      <p><strong>Precio:</strong> ${{ destination.price }}</p>
+      <a routerLink="/payment" class="btn btn-success">Comprar Ahora</a>
+      <a routerLink="/destinos" class="btn btn-secondary ms-2">Volver al Catálogo</a>
+    </div>
+  </div>
+</div>
