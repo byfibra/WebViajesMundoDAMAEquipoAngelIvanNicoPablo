@@ -12,6 +12,8 @@ import { DestinationService, Destination } from '../../destination';
 })
 export class DestinosComponent implements OnInit {
   destinations: Destination[] = [];
+  categories = ['Todos', 'Europa', 'Asia', 'América', 'África'];
+  selectedCategory = 'Todos';
 
   constructor(private destinationService: DestinationService) {}
 
@@ -20,4 +22,15 @@ export class DestinosComponent implements OnInit {
       this.destinations = data;
     });
   }
+
+  get filteredDestinations(): Destination[] {
+    return this.selectedCategory === 'Todos'
+      ? this.destinations
+      : this.destinations.filter(destination => destination.category === this.selectedCategory);
+  }
+
+  selectCategory(category: string): void {
+    this.selectedCategory = category;
+  }
 }
+

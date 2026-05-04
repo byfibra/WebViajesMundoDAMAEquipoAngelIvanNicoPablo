@@ -7,9 +7,12 @@ export interface Destination {
   id: number;
   name: string;
   description: string;
+  category: string;
+  duration: string;
   price: number;
   image: string;
   details: string;
+  features: string[];
 }
 
 @Injectable({

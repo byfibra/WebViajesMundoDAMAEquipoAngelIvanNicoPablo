@@ -1,29 +1,24 @@
-<div class="container mt-5">
-  <div class="jumbotron text-center bg-white p-5 shadow-sm rounded">
-    <h1 class="display-4">Explora el Mundo con Nosotros</h1>
-    <p class="lead">Las mejores ofertas en destinos nacionales e internacionales.</p>
-    <hr class="my-4">
-    <p>Desde playas paradisíacas hasta las montañas más altas. Tu aventura comienza aquí.</p>
-    <img src="paris destino.avif" alt="Destino destacado" class="img-fluid mb-3">
-    <a class="btn btn-primary btn-lg" routerLink="/destinos" role="button">Ver Catálogo</a>
-  </div>
-  <div class="row mt-5">
-    <div class="col-md-4">
-      <h3>Destinos Populares</h3>
-      <p>Descubre los lugares más visitados del mundo.</p>
-      <video controls class="w-100">
-        <source src="video-placeholder.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-      </video>
-    </div>
-    <div class="col-md-4">
-      <h3>Ofertas Especiales</h3>
-      <p>Aprovecha descuentos exclusivos en viajes seleccionados.</p>
-      <img src="paris destino.avif" alt="Oferta" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <h3>Testimonios</h3>
-      <p>"El mejor viaje de mi vida gracias a Viajes Mundo!" - Cliente Satisfecho</p>
+<section class="inicio-hero position-relative text-white">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content h-100 d-flex flex-column justify-content-center align-items-center text-center text-md-start">
+    <div class="hero-copy p-4 p-md-5 rounded-4 shadow-lg bg-dark bg-opacity-50">
+      <p class="hero-pretitle mb-3">Viajes Mundo</p>
+      <h1 class="hero-title mb-3">Tokio, Japón</h1>
+      <p class="hero-subtitle mb-4">Templos milenarios y tecnología futurista te esperan.</p>
+      <a class="btn btn-light btn-lg" routerLink="/destinos" role="button">Ver Destinos</a>
     </div>
   </div>
-</div>
+</section>
+
+<section class="search-section py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="input-group shadow-sm rounded-pill overflow-hidden border border-2 border-primary">
+          <input type="text" class="form-control border-0 ps-4" placeholder="Buscar destino..." aria-label="Buscar destino">
+          <button class="btn btn-primary px-4" type="button">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
