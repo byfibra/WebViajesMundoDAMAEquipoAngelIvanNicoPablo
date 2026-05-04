@@ -1,0 +1,43 @@
+<section class="destinos-hero py-5">
+  <div class="container text-center">
+    <h1 class="destinos-title">Nuestros Destinos</h1>
+    <p class="destinos-subtitle">Explora el mundo con nuestros paquetes cuidadosamente seleccionados</p>
+    <div class="category-buttons mt-4">
+      <button
+        *ngFor="let category of categories"
+        type="button"
+        class="btn btn-category"
+        [class.active]="selectedCategory === category"
+        (click)="selectCategory(category)">
+        {{ category }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6" *ngFor="let destination of filteredDestinations">
+      <article class="destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+        <div class="destination-image-wrap">
+          <img [src]="destination.image" [alt]="destination.name" class="destination-image">
+          <span class="destination-badge">{{ destination.category }}</span>
+        </div>
+        <div class="destination-body p-4">
+          <h3>{{ destination.name }}</h3>
+          <p class="destination-description">{{ destination.description }}</p>
+          <div class="destination-meta mb-3">
+            <span>{{ destination.duration }}</span>
+          </div>
+          <ul class="destination-features list-unstyled mb-3">
+            <li *ngFor="let feature of destination.features">✔ {{ feature }}</li>
+          </ul>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="destination-price">${{ destination.price }}</span>
+            <a [routerLink]="['/destination', destination.id]" class="btn btn-primary btn-sm">Ver Detalles</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
