@@ -1,0 +1,78 @@
+<footer [class.login]="isAuthPage" class="main-footer text-white">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Columna 1: Identidad -->
+      <div class="col-lg-4 col-md-12 text-center text-lg-start">
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3">
+          <img src="/logo-2eval-web.png" alt="Logo" height="40" class="me-3">
+          <h2 class="h4 fw-bold mb-0 text-white">Viajes Mundo</h2>
+        </div>
+        <p class="text-white small mb-4" style="max-width: 350px;">
+          Tu agencia de confianza. Hacemos realidad tus sueños de aventura con seguridad y atención personalizada en cada paso.
+        </p>
+        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+          <a href="#" class="text-white transition-hover opacity-100"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white transition-hover opacity-100"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white transition-hover opacity-100"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#" class="text-white transition-hover opacity-100"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="col-lg-2 col-md-4 col-6 text-start">
+        <h5 class="fw-bold mb-4 text-white">Navegación</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a routerLink="/inicio" class="text-white text-decoration-none hover-primary">Inicio</a></li>
+          <li class="mb-2"><a routerLink="/destinos" class="text-white text-decoration-none hover-primary">Destinos</a></li>
+          <li class="mb-2"><a routerLink="/contacto" class="text-white text-decoration-none hover-primary">Contacto</a></li>
+          <li class="mb-2"><a routerLink="/aboutus" class="text-white text-decoration-none hover-primary">Nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="col-lg-4 col-md-4 col-12 text-start">
+        <h5 class="fw-bold mb-4 text-white">Contacto</h5>
+        <ul class="list-unstyled small text-white">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill text-primary me-3 mt-1"></i>
+            <span>Calle Gran Vía 28, 28013 Madrid</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-telephone-fill text-primary me-3 mt-1"></i>
+            <span>+34 912 345 678 | +34 915 678 901</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-envelope-fill text-primary me-3 mt-1"></i>
+            <span>info@viajesmundo.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Legal -->
+      <div class="col-lg-2 col-md-4 col-6 text-start">
+        <h5 class="fw-bold mb-4 text-white">Legal</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">Aviso Legal</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">Privacidad</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-white opacity-25 my-4">
+
+    <div class="row align-items-center">
+      <!-- Copyright alineado con las primeras 3 columnas (aprox 10/12 del total) -->
+      <div class="col-md-10 text-center text-md-start text-white">
+        <p class="small mb-0">&copy; 2024 Viajes Mundo. Todos los derechos reservados.</p>
+      </div>
+      <!-- Logos alineados exactamente con la columna Legal (2/12 del total) -->
+      <div class="col-md-2 text-center text-md-end mt-3 mt-md-0">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" height="13" class="opacity-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" height="18" class="opacity-100">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
