@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { DestinationService, Destination } from '../../destination';
@@ -15,12 +15,14 @@ export class DestinosComponent implements OnInit {
   categories = ['Todos', 'Europa', 'Asia', 'América', 'África'];
   selectedCategory = 'Todos';
 
-  constructor(private destinationService: DestinationService) {}
+  constructor(private destinationService: DestinationService,
+    private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.destinationService.getDestinations().subscribe({
       next: (data) => {
         this.destinations = data;
+        this.cdr.detectChanges();
       },
       error: (err) => {
         console.error('Error al cargar destinos:', err);

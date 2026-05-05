@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { DestinationService, Destination } from '../../destination';
@@ -13,12 +13,16 @@ import { DestinationService, Destination } from '../../destination';
 export class InicioComponent implements OnInit {
   featuredDestinations: Destination[] = [];
 
-  constructor(private destinationService: DestinationService) {}
+  constructor(
+    private destinationService: DestinationService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.destinationService.getDestinations().subscribe({
       next: (data) => {
         this.featuredDestinations = this.getFeaturedDestinations(data);
+        this.cdr.detectChanges();
       },
       error: (err) => {
         console.error('Error al cargar destinos destacados:', err);
