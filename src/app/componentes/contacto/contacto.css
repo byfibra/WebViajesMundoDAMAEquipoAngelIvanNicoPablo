@@ -1,0 +1,82 @@
+.contact-page {
+  background-color: transparent;
+}
+
+/* Info Cards Styling */
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #e7f1ff;
+  border-radius: 50%;
+  color: #0d6efd;
+}
+
+/* Form Container Styling */
+.form-container {
+  border: none;
+}
+
+.form-control, .form-select {
+  padding: 0.75rem 1rem;
+  border-color: #dee2e6;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+.form-label {
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+/* Map Section */
+.map-section .ratio {
+  background-color: #f8f9fa;
+}
+
+/* Extra Info Styling */
+.extra-info-section h4 {
+  position: relative;
+  display: inline-block;
+}
+
+.extra-info-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+/* Alert Box */
+.alert-info {
+  background-color: #e1f5fe;
+}
+
+.alert-info .text-info {
+  color: #0288d1 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info-card {
+    margin-bottom: 1rem;
+  }
+}
