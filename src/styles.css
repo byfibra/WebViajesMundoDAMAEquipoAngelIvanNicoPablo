@@ -26,6 +26,11 @@ footer {
   margin-top: 50px;
 }
 
+/* Quitar margen del footer solo en el login */
+footer.login {
+  margin-top: 0 !important;
+}
+
 /* Estilo para las imágenes en las tarjetas */
 .card-img-top {
   height: 200px;

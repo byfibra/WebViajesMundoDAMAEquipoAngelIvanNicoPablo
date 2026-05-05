@@ -1,21 +1,74 @@
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <h2 class="text-center">Iniciar Sesión</h2>
-      <form>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" required>
+<div class="login-page-wrapper d-flex align-items-center justify-content-center">
+  <div class="login-overlay"></div>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+        <div class="login-card p-4 p-md-5 shadow-lg rounded-4 bg-white position-relative">
+          <div class="text-center mb-4">
+            <div class="logo-placeholder mb-3 mx-auto d-flex align-items-center justify-content-center">
+              <i class="bi bi-airplane-engines fs-1 text-primary"></i>
+            </div>
+            <h2 class="fw-bold">¡Bienvenido!</h2>
+            <p class="text-muted">Inicia sesión para planear tu próxima aventura</p>
+          </div>
+
+          <form>
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Correo Electrónico</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+                <input type="email" class="form-control bg-light border-start-0 ps-0" placeholder="tu@email.com" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Contraseña</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock text-muted"></i></span>
+                <input type="password" class="form-control bg-light border-start-0 ps-0" placeholder="••••••••" required>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label small text-muted" for="rememberMe">Recuérdame</label>
+              </div>
+              <a href="#" class="small text-primary text-decoration-none fw-semibold">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 btn-lg rounded-3 shadow-sm py-3 fw-bold mb-4">
+              Iniciar Sesión
+            </button>
+
+            <div class="social-login-divider d-flex align-items-center mb-4">
+              <hr class="flex-grow-1">
+              <span class="px-3 text-muted small text-uppercase">O continúa con</span>
+              <hr class="flex-grow-1">
+            </div>
+
+            <div class="row g-2 mb-4">
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-light border text-dark w-100 py-2 d-flex align-items-center justify-content-center">
+                  <i class="bi bi-google me-2"></i> Google
+                </button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-light border text-dark w-100 py-2 d-flex align-items-center justify-content-center">
+                  <i class="bi bi-facebook me-2"></i> Facebook
+                </button>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <p class="text-muted small mb-0">
+                ¿No tienes una cuenta? 
+                <a routerLink="/register" class="text-primary fw-bold text-decoration-none">Regístrate gratis</a>
+              </p>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-      </form>
-      <div class="mt-3 text-center">
-        <input type="checkbox" id="registerCheck">
-        <label for="registerCheck">¿No tienes cuenta? <a routerLink="/register">Regístrate aquí</a></label>
       </div>
     </div>
   </div>
